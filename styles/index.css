@@ -12,8 +12,7 @@ body {
 
 /* Header section style */
 header {
-    border: 01px solid tomato;
-    margin: 50px;
+    margin: 60px;
 }
 
 nav {
@@ -50,12 +49,11 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
-    gap: 30px;
+    margin-top: 70px;
 }
 
 .banner-title {
-    max-width: 6800px;
+    max-width: 680px;
     color: #3A3A3A;
     font-size: 52px;
     font-weight: 700;
@@ -71,7 +69,8 @@ h3 {
     margin-top: 16px;
     margin-bottom: 16px;
 }
-.button-pre-book{
+
+.button-pre-book {
     background: #E02C6D;
     align-items: center;
     display: inline-flex;
@@ -91,8 +90,11 @@ h3 {
 }
 
 .main-camera {
-    max-width: 400px;
-    border: 01px solid red;
+    background: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    width: auto;
+    background-position: bottom right, top left;
+    padding: 30px 33px 30px 02px;
 }
 
 
@@ -103,19 +105,51 @@ h3 {
         padding: 05px;
     }
 
-    nav {
+    nav,
+    .banner-container {
         flex-direction: column-reverse;
-        align-items: center;
+    }
+    .banner-container{
+        padding: 20px;
+    }
+    .banner-content{
+        text-align: center;
     }
 
     nav li {
         margin-right: 10px;
     }
+    .main-camera{
+        padding: 30px 15px;
+        width: auto;
+    }
+    .banner-title{
+        font-size: 28px;
+        line-height: normal;
+    }
+    .banner-description{
+        font-size: 14px;
+    }
 }
 
 /* Responsive Medium Devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    nav {
+    nav  {
         flex-direction: column;
     }
+    .banner-container{
+        padding: 20px;
+    }
+
+    .banner-title{
+        font-size: 28px;
+        line-height: normal;
+    }
+    .banner-description{
+        font-size: 14px;
+    }
+    .main-camera{
+        padding: 30px 15px;
+        width: auto;
+}
 }
