@@ -8,11 +8,15 @@ body {
     font-family: 'Inter', sans-serif;
     font-family: 'Manrope', sans-serif;
     font-family: 'Poppins', sans-serif;
-    margin: 60px;
+    /* margin: 60px; */
 }
 
 /* Header section style */
 
+header{
+    /* margin: 40px 120px; */
+    padding: 40px 90px 0 90px;
+}
 
 nav {
     display: flex;
@@ -101,8 +105,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 40px;
-    margin-bottom: 120px;
+    margin: 40px 80px 120px 80px;
     box-shadow: 01px 01px seashell;
     padding: 20px;
     border: 01px solid rgba(220, 220, 220, 0.548);
@@ -113,6 +116,10 @@ h3 {
 }
 
 /* Popular Collection section styles */
+.popular-width{
+   padding: 0 60px;
+   margin: 0 120px;
+}
 
 .popular {
     text-align: center;
@@ -125,7 +132,7 @@ h3 {
 
 .item-gallery {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 30px;
 }
 
@@ -204,8 +211,10 @@ h3 {
 .featured-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 96px;
+    margin: 100px;
+    border: 01px solid red;
 }
 
 .featured-name {
@@ -225,6 +234,36 @@ h3 {
 
 #join-now {
     border-radius: 05px;
+}
+
+footer{
+    background-color:#0A0826 ;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.footer-content{
+    color:#FFF ;
+}
+footer> ul{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+footer li{
+    list-style: none;
+}
+footer h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+footer p{
+    color: (--text-gray-300, #D9DBE1);
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 05px;
+    margin-bottom: 15px;
 }
 
 
