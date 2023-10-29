@@ -200,7 +200,6 @@ h3 {
     margin-top: 50px;
     margin-bottom: 100px;
     gap: 08px;
-
 }
 
 .see-more {
@@ -214,7 +213,6 @@ h3 {
     justify-content: space-between;
     gap: 96px;
     margin: 100px;
-    border: 01px solid red;
 }
 
 .featured-name {
@@ -275,7 +273,9 @@ footer p{
     }
 
     nav,
-    .banner-container {
+    .banner-container,
+    .item-gallery
+    {
         flex-direction: column-reverse;
     }
 
@@ -304,6 +304,17 @@ footer p{
 
     .banner-description {
         font-size: 14px;
+    }
+    .logo-container{
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0;
+        margin: 0;
+    }
+    .logo-container img{
+        width:80% ;
+        gap: 20px;
     }
 }
 
